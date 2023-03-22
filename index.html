@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>XOX Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="playBtn">
+        <span>XOX Game</span>
+        <div class="btns">
+          <button id="cmptr" onclick="choose('computer')">Computer</button>
+          <button id="multiple" onclick="choose('multiple')">Multiple</button>
+        </div>
+
+        <div class="xo">
+          <button id="back"><i class="fa-solid fa-angle-left"></i></button>
+          <button id="xBtn" onclick="start('x')"><i class="fa-solid fa-x"></i></button>
+          <button id="oBtn" onclick="start('o')"><i class="fa-solid fa-o"></i></button>
+        </div>
+      </div>
+
+
+      <div class="board">
+        <div class="box box1" id="id1" onclick="press('1')"></div>
+        <div class="box box2" id="id2" onclick="press('2')"></div>
+        <div class="box box3" id="id3" onclick="press('3')"></div>
+        <div class="box box4" id="id4" onclick="press('4')"></div>
+        <div class="box box5" id="id5" onclick="press('5')"></div>
+        <div class="box box6" id="id6" onclick="press('6')"></div>
+        <div class="box box7" id="id7" onclick="press('7')"></div>
+        <div class="box box8" id="id8" onclick="press('8')"></div>
+        <div class="box box9" id="id9" onclick="press('9')"></div>
+      </div>
+
+
+        <div class="gameOver">
+          <span id="state">Player "O" Won!</span>
+          <div class="btns">
+            <button id="cmptr" onclick="choose('computer')">Computer</button>
+            <button id="multiple" onclick="choose('multiple')">Multiple</button>
+          </div>
+
+          <div class="xo">
+            <button id="back" class="back2"><i class="fa-solid fa-angle-left"></i></button>
+            <button id="xBtn" onclick="start('x')"><i class="fa-solid fa-x"></i></button>
+            <button id="oBtn" onclick="start('o')"><i class="fa-solid fa-o"></i></button>
+          </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
